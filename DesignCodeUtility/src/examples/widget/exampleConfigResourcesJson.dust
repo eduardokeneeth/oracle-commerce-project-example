@@ -1,0 +1,15 @@
+{
+  "resources" : { {?withHelpText}{~s}{~s}{~s}{~s}
+    "exampleStringPropertyHelpText": "Example string property help text",
+    "exampleStringPropertyLabel": "Example String Property Label",
+
+    "exampleOptionPropertyHelpText": "Example option property help text",
+    "exampleOptionPropertyLabel": "Example Option Property Label",
+    "exampleOption1Label": "Example Option 1",
+    "exampleOption2Label": "Example Option 2",
+    "exampleOption3Label": "Example Option 3",
+
+    "exampleBooleanPropertyHelpText": "Example boolean property help text",
+    "exampleBooleanPropertyLabel": "Example Boolean Property Label" {/withHelpText}{~s}{~s}
+  }
+}

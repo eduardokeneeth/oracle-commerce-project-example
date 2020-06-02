@@ -1,0 +1,9 @@
+{
+  "inline" : {?inline}true{:else}false{/inline},
+  "tag" : "{elementTag}",
+  "children" : [{#children}"{.}"{@sep},{/sep}{/children}],
+  "configOptions" : [{#configOptions}"{.}"{@sep},{/sep}{/configOptions}],
+  "defaultText" : "",
+  "previewText" : "",
+  "type" : "{type}"
+}

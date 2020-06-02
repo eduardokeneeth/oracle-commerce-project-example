@@ -1,0 +1,5 @@
+{
+  "resources" : {
+    {?withHelpText}"exampleResourceKey": "Example Resource String"{/withHelpText}{~s}{~s}
+  }
+}

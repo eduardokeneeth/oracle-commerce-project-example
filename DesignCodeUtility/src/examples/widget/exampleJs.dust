@@ -1,0 +1,36 @@
+define(
+
+  ['knockout', 'CCi18n'],
+
+  function(ko, CCi18n) {
+
+    "use strict";
+
+    return {
+      {?withHelpText}/*
+       * Note that "this" is bound to the Widget View Model.
+       */{/withHelpText}{~s}{~s}{~s}{~s}{~s}{~s}
+      resourcesLoaded : function(widget) {
+      },
+
+      onLoad : function(widget) { {?withHelpText}
+      {?configurable}{~s}{~s}{~s}{~s}{~s}{~s}
+        /*
+         Configuration properties can be accessed as follows:
+         */
+        console.log(widget.exampleStringProperty());
+        console.log(widget.exampleOptionProperty());
+        console.log(widget.exampleBooleanProperty());
+      {/configurable}{?i18n}{~s}{~s}{~s}{~s}{~s}{~s}
+        /*
+         * Localized resource values can be accessed as follows:
+         */
+        console.log(CCi18n.t("exampleResourceKey"));
+      {/i18n}{/withHelpText}{~s}{~s}{~s}{~s}{~s}{~s}
+      },
+
+      beforeAppear : function(page) {
+      }
+    }
+  }
+);

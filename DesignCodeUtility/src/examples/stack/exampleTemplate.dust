@@ -1,0 +1,45 @@
+<div class="{stackType}">
+{?withHelpText}
+  <!--
+   Stack navigation tabs example
+  -->
+  <ul class="nav nav-tabs"
+      data-bind="attr: {id: '{stackType}-' + id() + '-tabs'}">
+    <!-- ko foreach: regions -->
+      <li role="presentation"
+          data-bind="css: {active: $index() === 0},
+                     attr: {id: '{stackType}-' + $parent.id() + '-tab-' + $index()}">
+        <a data-toggle="tab" data-bind="attr: {href: '#{stackType}-' + $parent.id() + '-content-' + $index()}">
+          <span data-bind="text: displayName"></span>
+        </a>
+      </li>
+    <!-- /ko -->
+  </ul>
+
+  <!--
+   Stack Content (regions) example
+  -->
+  <div class="col-sm-9 col-xs-12">
+
+    <div class="tab-content">
+      <!-- ko foreach: regions -->
+        <div role="tabpanel" class="tab-pane"
+             data-bind="attr: {id: '{stackType}-' + $parent.id() + '-content-' + $index()},
+                        css: {active: $index() === 0}">
+
+          <div data-bind="template: {name: 'region-template'}"
+               class="row {stackType}-tabbed-content"></div>
+
+        </div>
+      <!-- /ko -->
+    </div>
+  </div>
+
+  {?i18n}{~s}{~s}
+  <!--
+   Localized resource values can be accessed as follows:
+  -->
+  <span data-bind="stackLocaleText : {value:'exampleResourceKey', attr:'innerText', params:{}}"></span>
+  {/i18n}
+{/withHelpText}
+</div>

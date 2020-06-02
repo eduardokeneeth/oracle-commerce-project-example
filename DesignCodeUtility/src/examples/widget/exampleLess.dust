@@ -1,0 +1,11 @@
+{?withHelpText}
+  /* ---------------------------------------------------------------------- */
+  /*	Blank Widget Styles
+  /* ---------------------------------------------------------------------- */
+
+  // Use class rather than id to allow multiple
+  // instances of this widget on a single page.
+{/withHelpText}
+.{widgetType} {
+
+}

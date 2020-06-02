@@ -1,0 +1,13 @@
+{
+  "config" : {
+    {?withHelpText}{~s}{~s}{~s}{~s}
+    "exampleStringProperty" : "Example String Property Value",
+    "exampleOptionProperty" : "option1",
+    "exampleBooleanProperty" : true
+    {/withHelpText}{~s}{~s}
+  },
+  "imports": [],
+  "minWidth": 1,
+  "availableToAllPages": true,
+  "jsEditable" : true
+}

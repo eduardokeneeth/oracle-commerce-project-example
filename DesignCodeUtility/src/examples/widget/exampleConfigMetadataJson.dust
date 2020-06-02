@@ -1,0 +1,46 @@
+{
+  "widgetDescriptorName": "{widgetType}",
+  "properties": [ {?withHelpText}{~s}{~s}
+    {
+      "id": "exampleStringProperty",
+      "type": "stringType",
+      "name": "exampleStringProperty",
+      "labelResourceId": "exampleStringPropertyLabel",
+      "helpTextResourceId": "exampleStringPropertyHelpText",
+      "required": true
+    },
+    {
+      "id": "exampleOptionProperty",
+      "type": "optionType",
+      "name": "exampleOptionProperty",
+      "helpTextResourceId": "exampleOptionPropertyHelpText",
+      "labelResourceId": "exampleOptionPropertyLabel",
+      "defaultValue": "option1",
+      "options": [
+        {
+          "id": "exampleOption1",
+          "value": "exampleOption1",
+          "labelResourceId": "exampleOption1Label"
+        },
+        {
+          "id": "exampleOption2",
+          "value": "exampleOption2",
+          "labelResourceId": "exampleOption2Label"
+        },
+        {
+          "id": "exampleOption3",
+          "value": "exampleOption3",
+          "labelResourceId": "exampleOption3Label"
+        }
+      ]
+    },
+    {
+      "id": "exampleBooleanProperty",
+      "type": "booleanType",
+      "name": "exampleBooleanProperty",
+      "helpTextResourceId": "exampleBooleanPropertyHelpText",
+      "labelResourceId": "exampleBooleanPropertyLabel",
+      "defaultValue": true
+    } {/withHelpText}{~s}{~s}
+  ]
+}

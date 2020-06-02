@@ -1,0 +1,20 @@
+{?withHelpText}
+  /* ---------------------------------------------------------------------- */
+  /*	{stackType} Base Styles
+  /* ---------------------------------------------------------------------- */
+
+  // Use class rather than id to allow multiple
+  // instances of this widget on a single page.
+{/withHelpText}
+.{stackType} {
+
+  {?withHelpText}/* Styles applied to tab headings. */{/withHelpText}
+  .nav-tabs {
+    text-align: @textAlignVar;
+  }
+
+  {?withHelpText}/* Styles applied to region content. */{/withHelpText}
+  .tab-content {
+
+  }
+}

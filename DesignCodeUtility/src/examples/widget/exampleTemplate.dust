@@ -1,0 +1,21 @@
+<div class="{widgetType}">
+{?elementized}{~s}{~s}
+<div class="templateRegion" id="{widgetType}" data-oc-id="{widgetType}">
+  <!-- oc layout: panels -->
+  <div class="row">
+    <div class="oc-panel col-md-6" data-oc-id="panel-1">
+     {elementMarkup|s}
+    </div>
+    <div class="oc-panel col-md-6" data-oc-id="panel-2"></div>
+  </div>
+  <!-- /oc -->
+</div>
+{:else}
+{?withHelpText}{?i18n}{~s}{~s}
+  <!--
+   Localized resource values can be accessed as follows:
+  -->
+  <span data-bind="widgetLocaleText : {value:'exampleResourceKey', attr:'innerText', params:{}}"></span>
+{/i18n}{/withHelpText}
+{/elementized}
+</div>

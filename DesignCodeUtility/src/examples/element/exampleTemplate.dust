@@ -1,0 +1,4 @@
+{?withJavaScript}<!-- ko if: initialized() && $data.elements.hasOwnProperty('{elementTag}') -->{/withJavaScript}
+{?textBox}<span data-bind="widgetLocaleText:{custom: $elementInstance.textId, value: 'customTextNotFound', attr:'innerText'}"></span>{/textBox}
+{elementBody|s}
+{?withJavaScript}<!-- /ko -->{/withJavaScript}
