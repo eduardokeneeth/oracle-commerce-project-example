@@ -36,7 +36,7 @@
     "ps-list": "4.0.0",
     "remove": "0.1.5",
     "sanitize-filename": "1.6.1",
-    "tmp": "0.0.31",
+    "tmp": "0.2.4",
     "unzipper": "^0.9.7",
     "upath": "0.2.0",
     "username": "2.3.0",
